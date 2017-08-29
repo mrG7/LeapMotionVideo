@@ -5,8 +5,6 @@
 #include <QDate>
 #include <QTime>
 #include <QTimer>
-#include <QFile>
-#include <QTextStream>
 
 #include "Leap.h"
 using namespace Leap;
@@ -39,9 +37,6 @@ private:
 
     Controller *lpController;
     Frame frame;
-
-    QFile *dataFile;
-    QTextStream textStream;
 
     cv::Mat left;
     cv::Mat right;
