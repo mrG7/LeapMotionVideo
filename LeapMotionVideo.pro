@@ -20,9 +20,11 @@ HEADERS  += leapmotionvideo.h
 FORMS    += leapmotionvideo.ui
 
 win32: LIBS += -LC:\LeapSDK\lib\x86\ -lLeap
+
 INCLUDEPATH += C:\LeapSDK\include \
             C:\opencv\build\include
 DEPENDPATH += C:\LeapSDK\include
+
 CONFIG(release,debug|release){
     LIBS += C:\opencv\build\x86\vc12\lib\opencv_calib3d2410.lib \
             C:\opencv\build\x86\vc10\lib\opencv_contrib2410.lib \
